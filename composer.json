@@ -16,8 +16,8 @@
     "minimum-stability": "dev",
     "autoload":{
       "psr-4":{
-        "hirpc\\GPBMetadata\\":"src/hirpc/GPBMetadata/",
-        "hirpc\\Example\\":"src/hirpc/Example/"
+        "GPBMetadata\\":"src/hirpc/GPBMetadata/",
+        "Example\\":"src/hirpc/Example/"
       }
     }
 }
