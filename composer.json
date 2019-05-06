@@ -1,0 +1,17 @@
+{
+    "name": "grpc/gophp",
+    "description": "php grpc client",
+    "require": {
+        "grpc/gophp": "1.0",
+        "grpc/grpc": "^v1.19",
+        "google/protobuf": "^v3.7"
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload":{
+      "psr-4":{
+        "hirpc\\GPBMetadata\\":"src/hirpc/GPBMetadata/",
+        "hirpc\\Example\\":"src/hirpc/Example/"
+      }
+    }
+}
