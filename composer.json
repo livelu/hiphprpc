@@ -1,8 +1,14 @@
 {
     "name": "hirpc/gophp",
     "description": "php grpc client",
+    "repositories":[
+        {
+            "type":"vcs",
+            "url":"https://github.com/livelu/hiphprpc.git"
+        }
+    ],
     "require": {
-        "hirpc/gophp": "1.0",
+        "hirpc/gophp": "dev-master",
         "grpc/grpc": "^v1.19",
         "google/protobuf": "^v3.7"
     },
