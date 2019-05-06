@@ -25,7 +25,7 @@ class ExampleClient extends \Grpc\BaseStub {
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/example.Example/Call',
         $argument,
-        ['\hirpc\Example\GrpcResponse', 'decode'],
+        ['\Example\GrpcResponse', 'decode'],
         $metadata, $options);
     }
 
