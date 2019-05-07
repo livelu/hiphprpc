@@ -17,7 +17,8 @@
     "autoload":{
       "psr-4":{
         "GPBMetadata\\":"src/hirpc/GPBMetadata/",
-        "Example\\":"src/hirpc/Example/"
+        "Example\\":"src/hirpc/Example/",
+        "Users\\":"src/hirpc/Users/"
       }
     }
 }

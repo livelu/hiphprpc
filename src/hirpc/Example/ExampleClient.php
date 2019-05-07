@@ -28,5 +28,12 @@ class ExampleClient extends \Grpc\BaseStub {
         ['\Example\GrpcResponse', 'decode'],
         $metadata, $options);
     }
+     public function Uname(\Example\GrpcRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/example.Example/Uname',
+        $argument,
+        ['\Example\GrpcResponse', 'decode'],
+        $metadata, $options);
+    }
 
 }
