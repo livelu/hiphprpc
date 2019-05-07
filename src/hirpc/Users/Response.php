@@ -22,9 +22,9 @@ class Response extends \Google\Protobuf\Internal\Message
      */
     private $code = 0;
     /**
-     * Generated from protobuf field <code>repeated .users.Usersinfo usersinfo = 3;</code>
+     * Generated from protobuf field <code>string Usersinfo = 3;</code>
      */
-    private $usersinfo;
+    private $Usersinfo = '';
 
     /**
      * Constructor.
@@ -34,7 +34,7 @@ class Response extends \Google\Protobuf\Internal\Message
      *
      *     @type string $success
      *     @type int|string $code
-     *     @type \Users\Usersinfo[]|\Google\Protobuf\Internal\RepeatedField $usersinfo
+     *     @type string $Usersinfo
      * }
      */
     public function __construct($data = NULL) {
@@ -87,23 +87,23 @@ class Response extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>repeated .users.Usersinfo usersinfo = 3;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * Generated from protobuf field <code>string Usersinfo = 3;</code>
+     * @return string
      */
     public function getUsersinfo()
     {
-        return $this->usersinfo;
+        return $this->Usersinfo;
     }
 
     /**
-     * Generated from protobuf field <code>repeated .users.Usersinfo usersinfo = 3;</code>
-     * @param \Users\Usersinfo[]|\Google\Protobuf\Internal\RepeatedField $var
+     * Generated from protobuf field <code>string Usersinfo = 3;</code>
+     * @param string $var
      * @return $this
      */
     public function setUsersinfo($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Users\Usersinfo::class);
-        $this->usersinfo = $arr;
+        GPBUtil::checkString($var, True);
+        $this->Usersinfo = $var;
 
         return $this;
     }

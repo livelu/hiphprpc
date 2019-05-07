@@ -21,6 +21,10 @@ class Usersinfo extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string name = 2;</code>
      */
     private $name = '';
+    /**
+     * Generated from protobuf field <code>string openid = 3;</code>
+     */
+    private $openid = '';
 
     /**
      * Constructor.
@@ -30,6 +34,7 @@ class Usersinfo extends \Google\Protobuf\Internal\Message
      *
      *     @type int|string $id
      *     @type string $name
+     *     @type string $openid
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +82,28 @@ class Usersinfo extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string openid = 3;</code>
+     * @return string
+     */
+    public function getOpenid()
+    {
+        return $this->openid;
+    }
+
+    /**
+     * Generated from protobuf field <code>string openid = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setOpenid($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->openid = $var;
 
         return $this;
     }
