@@ -21,7 +21,7 @@ class ShareServiceClient extends \Grpc\BaseStub {
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function sharingRecords(\Share\ShareRequest $argument,
+    public function SharingRecords(\Share\ShareRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/share.ShareService/sharingRecords',
         $argument,
@@ -34,7 +34,7 @@ class ShareServiceClient extends \Grpc\BaseStub {
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function sharingNum(\Share\GetRequest $argument,
+    public function SharingNum(\Share\GetRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/share.ShareService/sharingNum',
         $argument,
