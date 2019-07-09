@@ -19,7 +19,8 @@
         "GPBMetadata\\":"src/hirpc/GPBMetadata/",
         "Example\\":"src/hirpc/Example/",
         "Users\\":"src/hirpc/Users/",
-        "Share\\":"src/hirpc/Share/"
+        "Share\\":"src/hirpc/Share/",
+        "Course\\":"src/hirpc/Course/"
       }
     }
 }
