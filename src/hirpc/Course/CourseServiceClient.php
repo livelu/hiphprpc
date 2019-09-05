@@ -42,4 +42,17 @@ class CourseServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * @param \Course\GetRequestOne $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function SeachCurr(\Course\GetRequestOne $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/course.CourseService/SeachCurr',
+        $argument,
+        ['\Course\CourseResponse', 'decode'],
+        $metadata, $options);
+    }
+
 }

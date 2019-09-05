@@ -17,6 +17,10 @@ class getRequestOne extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string course_id = 1;</code>
      */
     private $course_id = '';
+    /**
+     * Generated from protobuf field <code>string coursename = 2;</code>
+     */
+    private $coursename = '';
 
     /**
      * Constructor.
@@ -25,6 +29,7 @@ class getRequestOne extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $course_id
+     *     @type string $coursename
      * }
      */
     public function __construct($data = NULL) {
@@ -50,6 +55,28 @@ class getRequestOne extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->course_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string coursename = 2;</code>
+     * @return string
+     */
+    public function getCoursename()
+    {
+        return $this->coursename;
+    }
+
+    /**
+     * Generated from protobuf field <code>string coursename = 2;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setCoursename($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->coursename = $var;
 
         return $this;
     }
