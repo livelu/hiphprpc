@@ -21,6 +21,14 @@ class getRequestOne extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string coursename = 2;</code>
      */
     private $coursename = '';
+    /**
+     * Generated from protobuf field <code>int32 size = 3;</code>
+     */
+    private $size = 0;
+    /**
+     * Generated from protobuf field <code>int32 offset = 4;</code>
+     */
+    private $offset = 0;
 
     /**
      * Constructor.
@@ -30,6 +38,8 @@ class getRequestOne extends \Google\Protobuf\Internal\Message
      *
      *     @type string $course_id
      *     @type string $coursename
+     *     @type int $size
+     *     @type int $offset
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +87,50 @@ class getRequestOne extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->coursename = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 size = 3;</code>
+     * @return int
+     */
+    public function getSize()
+    {
+        return $this->size;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 size = 3;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setSize($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->size = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 offset = 4;</code>
+     * @return int
+     */
+    public function getOffset()
+    {
+        return $this->offset;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 offset = 4;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setOffset($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->offset = $var;
 
         return $this;
     }
