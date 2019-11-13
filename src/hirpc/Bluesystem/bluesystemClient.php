@@ -1,11 +1,11 @@
 <?php
 // GENERATED CODE -- DO NOT EDIT!
 
-namespace System;
+namespace Bluesystem;
 
 /**
  */
-class SystemClient extends \Grpc\BaseStub {
+class bluesystemClient extends \Grpc\BaseStub {
 
     /**
      * @param string $hostname hostname
@@ -17,28 +17,28 @@ class SystemClient extends \Grpc\BaseStub {
     }
 
     /**
-     * @param \System\SettingRequest $argument input argument
+     * @param \Bluesystem\SettingRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function Sysparamters(\System\SettingRequest $argument,
+    public function Sysparamters(\Bluesystem\SettingRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/system.System/Sysparamters',
+        return $this->_simpleRequest('/bluesystem.bluesystem/Sysparamters',
         $argument,
-        ['\System\SettingResponse', 'decode'],
+        ['\Bluesystem\SettingResponse', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \System\SetSettingRequest $argument input argument
+     * @param \Bluesystem\SetSettingRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function Setsysparamters(\System\SetSettingRequest $argument,
+    public function Setsysparamters(\Bluesystem\SetSettingRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/system.System/Setsysparamters',
+        return $this->_simpleRequest('/bluesystem.bluesystem/Setsysparamters',
         $argument,
-        ['\System\SettingResponse', 'decode'],
+        ['\Bluesystem\SettingResponse', 'decode'],
         $metadata, $options);
     }
 
