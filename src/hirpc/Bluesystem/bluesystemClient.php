@@ -5,7 +5,7 @@ namespace Bluesystem;
 
 /**
  */
-class bluesystemClient extends \Grpc\BaseStub {
+class BluesystemClient extends \Grpc\BaseStub {
 
     /**
      * @param string $hostname hostname
@@ -23,7 +23,7 @@ class bluesystemClient extends \Grpc\BaseStub {
      */
     public function Sysparamters(\Bluesystem\SettingRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/bluesystem.bluesystem/Sysparamters',
+        return $this->_simpleRequest('/bluesystem.Bluesystem/Sysparamters',
         $argument,
         ['\Bluesystem\SettingResponse', 'decode'],
         $metadata, $options);
@@ -36,7 +36,7 @@ class bluesystemClient extends \Grpc\BaseStub {
      */
     public function Setsysparamters(\Bluesystem\SetSettingRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/bluesystem.bluesystem/Setsysparamters',
+        return $this->_simpleRequest('/bluesystem.Bluesystem/Setsysparamters',
         $argument,
         ['\Bluesystem\SettingResponse', 'decode'],
         $metadata, $options);
