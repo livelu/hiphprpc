@@ -75,6 +75,50 @@ class SetSettingRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string videotape = 15;</code>
      */
     private $videotape = '';
+    /**
+     * Generated from protobuf field <code>bool serverAuth = 16;</code>
+     */
+    private $serverAuth = false;
+    /**
+     * Generated from protobuf field <code>int32 smtpPort = 17;</code>
+     */
+    private $smtpPort = 0;
+    /**
+     * Generated from protobuf field <code>string sendName = 18;</code>
+     */
+    private $sendName = '';
+    /**
+     * Generated from protobuf field <code>string email = 19;</code>
+     */
+    private $email = '';
+    /**
+     * Generated from protobuf field <code>bool ssl = 20;</code>
+     */
+    private $ssl = false;
+    /**
+     * Generated from protobuf field <code>string smtpServer = 21;</code>
+     */
+    private $smtpServer = '';
+    /**
+     * Generated from protobuf field <code>string userName = 22;</code>
+     */
+    private $userName = '';
+    /**
+     * Generated from protobuf field <code>string password = 23;</code>
+     */
+    private $password = '';
+    /**
+     * Generated from protobuf field <code>string rtmp = 24;</code>
+     */
+    private $rtmp = '';
+    /**
+     * Generated from protobuf field <code>string storage = 25;</code>
+     */
+    private $storage = '';
+    /**
+     * Generated from protobuf field <code>int32 path = 26;</code>
+     */
+    private $path = 0;
 
     /**
      * Constructor.
@@ -97,6 +141,17 @@ class SetSettingRequest extends \Google\Protobuf\Internal\Message
      *     @type string $picture
      *     @type string $screenshot
      *     @type string $videotape
+     *     @type bool $serverAuth
+     *     @type int $smtpPort
+     *     @type string $sendName
+     *     @type string $email
+     *     @type bool $ssl
+     *     @type string $smtpServer
+     *     @type string $userName
+     *     @type string $password
+     *     @type string $rtmp
+     *     @type string $storage
+     *     @type int $path
      * }
      */
     public function __construct($data = NULL) {
@@ -430,6 +485,248 @@ class SetSettingRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->videotape = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool serverAuth = 16;</code>
+     * @return bool
+     */
+    public function getServerAuth()
+    {
+        return $this->serverAuth;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool serverAuth = 16;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setServerAuth($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->serverAuth = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 smtpPort = 17;</code>
+     * @return int
+     */
+    public function getSmtpPort()
+    {
+        return $this->smtpPort;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 smtpPort = 17;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setSmtpPort($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->smtpPort = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string sendName = 18;</code>
+     * @return string
+     */
+    public function getSendName()
+    {
+        return $this->sendName;
+    }
+
+    /**
+     * Generated from protobuf field <code>string sendName = 18;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setSendName($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->sendName = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string email = 19;</code>
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * Generated from protobuf field <code>string email = 19;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEmail($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->email = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool ssl = 20;</code>
+     * @return bool
+     */
+    public function getSsl()
+    {
+        return $this->ssl;
+    }
+
+    /**
+     * Generated from protobuf field <code>bool ssl = 20;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setSsl($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->ssl = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string smtpServer = 21;</code>
+     * @return string
+     */
+    public function getSmtpServer()
+    {
+        return $this->smtpServer;
+    }
+
+    /**
+     * Generated from protobuf field <code>string smtpServer = 21;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setSmtpServer($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->smtpServer = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string userName = 22;</code>
+     * @return string
+     */
+    public function getUserName()
+    {
+        return $this->userName;
+    }
+
+    /**
+     * Generated from protobuf field <code>string userName = 22;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setUserName($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->userName = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string password = 23;</code>
+     * @return string
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * Generated from protobuf field <code>string password = 23;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPassword($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->password = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string rtmp = 24;</code>
+     * @return string
+     */
+    public function getRtmp()
+    {
+        return $this->rtmp;
+    }
+
+    /**
+     * Generated from protobuf field <code>string rtmp = 24;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRtmp($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->rtmp = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string storage = 25;</code>
+     * @return string
+     */
+    public function getStorage()
+    {
+        return $this->storage;
+    }
+
+    /**
+     * Generated from protobuf field <code>string storage = 25;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setStorage($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->storage = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 path = 26;</code>
+     * @return int
+     */
+    public function getPath()
+    {
+        return $this->path;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 path = 26;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPath($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->path = $var;
 
         return $this;
     }

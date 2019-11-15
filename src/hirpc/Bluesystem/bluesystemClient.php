@@ -42,4 +42,17 @@ class BluesystemClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * @param \Bluesystem\SetSettingRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function Setsystem(\Bluesystem\SetSettingRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/bluesystem.Bluesystem/Setsystem',
+        $argument,
+        ['\Bluesystem\SettingResponse', 'decode'],
+        $metadata, $options);
+    }
+
 }
