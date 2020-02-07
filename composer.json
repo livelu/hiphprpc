@@ -21,7 +21,7 @@
         "Users\\":"src/hirpc/Users/",
         "Share\\":"src/hirpc/Share/",
         "Course\\":"src/hirpc/Course/",
-        "Bluesystem\\":"src/hirpc/Bluesystem/"
+        "Mechanism\\":"src/hirpc/Mechanism/"
       }
     }
 }
