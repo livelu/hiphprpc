@@ -17,6 +17,10 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string domainName = 1;</code>
      */
     private $domainName = '';
+    /**
+     * Generated from protobuf field <code>int64 scene = 2;</code>
+     */
+    private $scene = 0;
 
     /**
      * Constructor.
@@ -25,6 +29,7 @@ class Request extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $domainName
+     *     @type int|string $scene
      * }
      */
     public function __construct($data = NULL) {
@@ -50,6 +55,28 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->domainName = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 scene = 2;</code>
+     * @return int|string
+     */
+    public function getScene()
+    {
+        return $this->scene;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 scene = 2;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setScene($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->scene = $var;
 
         return $this;
     }

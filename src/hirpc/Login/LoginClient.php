@@ -29,4 +29,17 @@ class LoginClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * @param \Login\Request $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function CheckLogin(\Login\Request $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/login.Login/CheckLogin',
+        $argument,
+        ['\Login\Response', 'decode'],
+        $metadata, $options);
+    }
+
 }
