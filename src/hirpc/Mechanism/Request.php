@@ -14,9 +14,41 @@ use Google\Protobuf\Internal\GPBUtil;
 class Request extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string domainName = 1;</code>
+     * Generated from protobuf field <code>int64 id = 1;</code>
      */
-    private $domainName = '';
+    private $id = 0;
+    /**
+     * Generated from protobuf field <code>int32 is_headquarters = 2;</code>
+     */
+    private $is_headquarters = 0;
+    /**
+     * Generated from protobuf field <code>int64 authorizer_id = 3;</code>
+     */
+    private $authorizer_id = 0;
+    /**
+     * Generated from protobuf field <code>int32 is_paginate = 4;</code>
+     */
+    private $is_paginate = 0;
+    /**
+     * Generated from protobuf field <code>int32 limit = 5;</code>
+     */
+    private $limit = 0;
+    /**
+     * Generated from protobuf field <code>int32 page = 6;</code>
+     */
+    private $page = 0;
+    /**
+     * Generated from protobuf field <code>int64 pro_id = 7;</code>
+     */
+    private $pro_id = 0;
+    /**
+     * Generated from protobuf field <code>int64 city_id = 8;</code>
+     */
+    private $city_id = 0;
+    /**
+     * Generated from protobuf field <code>string mechanism_name = 9;</code>
+     */
+    private $mechanism_name = '';
 
     /**
      * Constructor.
@@ -24,7 +56,15 @@ class Request extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type string $domainName
+     *     @type int|string $id
+     *     @type int $is_headquarters
+     *     @type int|string $authorizer_id
+     *     @type int $is_paginate
+     *     @type int $limit
+     *     @type int $page
+     *     @type int|string $pro_id
+     *     @type int|string $city_id
+     *     @type string $mechanism_name
      * }
      */
     public function __construct($data = NULL) {
@@ -33,23 +73,199 @@ class Request extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string domainName = 1;</code>
-     * @return string
+     * Generated from protobuf field <code>int64 id = 1;</code>
+     * @return int|string
      */
-    public function getDomainName()
+    public function getId()
     {
-        return $this->domainName;
+        return $this->id;
     }
 
     /**
-     * Generated from protobuf field <code>string domainName = 1;</code>
+     * Generated from protobuf field <code>int64 id = 1;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setId($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 is_headquarters = 2;</code>
+     * @return int
+     */
+    public function getIsHeadquarters()
+    {
+        return $this->is_headquarters;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 is_headquarters = 2;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setIsHeadquarters($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->is_headquarters = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 authorizer_id = 3;</code>
+     * @return int|string
+     */
+    public function getAuthorizerId()
+    {
+        return $this->authorizer_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 authorizer_id = 3;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setAuthorizerId($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->authorizer_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 is_paginate = 4;</code>
+     * @return int
+     */
+    public function getIsPaginate()
+    {
+        return $this->is_paginate;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 is_paginate = 4;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setIsPaginate($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->is_paginate = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 limit = 5;</code>
+     * @return int
+     */
+    public function getLimit()
+    {
+        return $this->limit;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 limit = 5;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setLimit($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->limit = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 page = 6;</code>
+     * @return int
+     */
+    public function getPage()
+    {
+        return $this->page;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 page = 6;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPage($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->page = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 pro_id = 7;</code>
+     * @return int|string
+     */
+    public function getProId()
+    {
+        return $this->pro_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 pro_id = 7;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setProId($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->pro_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 city_id = 8;</code>
+     * @return int|string
+     */
+    public function getCityId()
+    {
+        return $this->city_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 city_id = 8;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setCityId($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->city_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string mechanism_name = 9;</code>
+     * @return string
+     */
+    public function getMechanismName()
+    {
+        return $this->mechanism_name;
+    }
+
+    /**
+     * Generated from protobuf field <code>string mechanism_name = 9;</code>
      * @param string $var
      * @return $this
      */
-    public function setDomainName($var)
+    public function setMechanismName($var)
     {
         GPBUtil::checkString($var, True);
-        $this->domainName = $var;
+        $this->mechanism_name = $var;
 
         return $this;
     }

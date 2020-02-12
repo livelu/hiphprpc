@@ -21,9 +21,9 @@ class MechanismClient extends \Grpc\BaseStub {
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function GetLoginCode(\Mechanism\Request $argument,
+    public function MechanismList(\Mechanism\Request $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/mechanism.Mechanism/GetLoginCode',
+        return $this->_simpleRequest('/mechanism.Mechanism/MechanismList',
         $argument,
         ['\Mechanism\Response', 'decode'],
         $metadata, $options);
