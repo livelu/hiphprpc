@@ -22,7 +22,8 @@
         "Share\\":"src/hirpc/Share/",
         "Course\\":"src/hirpc/Course/",
         "Mechanism\\":"src/hirpc/Mechanism/",
-        "Login\\":"src/hirpc/Login/"
+        "Login\\":"src/hirpc/Login/",
+        "Courseadmin\\":"src/hirpc/Courseadmin/"
       }
     }
 }
