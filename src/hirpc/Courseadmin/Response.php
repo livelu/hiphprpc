@@ -25,6 +25,10 @@ class Response extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string data = 3;</code>
      */
     private $data = '';
+    /**
+     * Generated from protobuf field <code>.courseadmin.codeData codedata = 4;</code>
+     */
+    private $codedata = null;
 
     /**
      * Constructor.
@@ -35,6 +39,7 @@ class Response extends \Google\Protobuf\Internal\Message
      *     @type string $success
      *     @type int|string $code
      *     @type string $data
+     *     @type \Courseadmin\codeData $codedata
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +109,28 @@ class Response extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->data = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>.courseadmin.codeData codedata = 4;</code>
+     * @return \Courseadmin\codeData
+     */
+    public function getCodedata()
+    {
+        return $this->codedata;
+    }
+
+    /**
+     * Generated from protobuf field <code>.courseadmin.codeData codedata = 4;</code>
+     * @param \Courseadmin\codeData $var
+     * @return $this
+     */
+    public function setCodedata($var)
+    {
+        GPBUtil::checkMessage($var, \Courseadmin\codeData::class);
+        $this->codedata = $var;
 
         return $this;
     }

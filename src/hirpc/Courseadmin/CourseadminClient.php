@@ -29,4 +29,17 @@ class CourseadminClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * @param \Courseadmin\Request $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function GetAdmincoe(\Courseadmin\Request $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/courseadmin.Courseadmin/GetAdmincoe',
+        $argument,
+        ['\Courseadmin\Response', 'decode'],
+        $metadata, $options);
+    }
+
 }

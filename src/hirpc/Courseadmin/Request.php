@@ -29,6 +29,14 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string search_name = 4;</code>
      */
     private $search_name = '';
+    /**
+     * Generated from protobuf field <code>int32 number_people = 5;</code>
+     */
+    private $number_people = 0;
+    /**
+     * Generated from protobuf field <code>int64 user_id = 6;</code>
+     */
+    private $user_id = 0;
 
     /**
      * Constructor.
@@ -40,6 +48,8 @@ class Request extends \Google\Protobuf\Internal\Message
      *     @type int $page
      *     @type int $limit
      *     @type string $search_name
+     *     @type int $number_people
+     *     @type int|string $user_id
      * }
      */
     public function __construct($data = NULL) {
@@ -131,6 +141,50 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->search_name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 number_people = 5;</code>
+     * @return int
+     */
+    public function getNumberPeople()
+    {
+        return $this->number_people;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 number_people = 5;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setNumberPeople($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->number_people = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 user_id = 6;</code>
+     * @return int|string
+     */
+    public function getUserId()
+    {
+        return $this->user_id;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 user_id = 6;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setUserId($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->user_id = $var;
 
         return $this;
     }
