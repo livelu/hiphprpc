@@ -41,6 +41,14 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string appid = 7;</code>
      */
     private $appid = '';
+    /**
+     * Generated from protobuf field <code>int32 pcLogin = 8;</code>
+     */
+    private $pcLogin = 0;
+    /**
+     * Generated from protobuf field <code>int64 adminid = 9;</code>
+     */
+    private $adminid = 0;
 
     /**
      * Constructor.
@@ -55,6 +63,8 @@ class Request extends \Google\Protobuf\Internal\Message
      *     @type int $number_people
      *     @type int|string $user_id
      *     @type string $appid
+     *     @type int $pcLogin
+     *     @type int|string $adminid
      * }
      */
     public function __construct($data = NULL) {
@@ -212,6 +222,50 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->appid = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 pcLogin = 8;</code>
+     * @return int
+     */
+    public function getPcLogin()
+    {
+        return $this->pcLogin;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 pcLogin = 8;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPcLogin($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->pcLogin = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 adminid = 9;</code>
+     * @return int|string
+     */
+    public function getAdminid()
+    {
+        return $this->adminid;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 adminid = 9;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setAdminid($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->adminid = $var;
 
         return $this;
     }
