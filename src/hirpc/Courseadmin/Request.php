@@ -37,6 +37,10 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 user_id = 6;</code>
      */
     private $user_id = 0;
+    /**
+     * Generated from protobuf field <code>string appid = 7;</code>
+     */
+    private $appid = '';
 
     /**
      * Constructor.
@@ -50,6 +54,7 @@ class Request extends \Google\Protobuf\Internal\Message
      *     @type string $search_name
      *     @type int $number_people
      *     @type int|string $user_id
+     *     @type string $appid
      * }
      */
     public function __construct($data = NULL) {
@@ -185,6 +190,28 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->user_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string appid = 7;</code>
+     * @return string
+     */
+    public function getAppid()
+    {
+        return $this->appid;
+    }
+
+    /**
+     * Generated from protobuf field <code>string appid = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAppid($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->appid = $var;
 
         return $this;
     }

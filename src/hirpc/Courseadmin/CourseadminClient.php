@@ -42,4 +42,17 @@ class CourseadminClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * @param \Courseadmin\Request $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function SuperadminCode(\Courseadmin\Request $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/courseadmin.Courseadmin/SuperadminCode',
+        $argument,
+        ['\Courseadmin\Response', 'decode'],
+        $metadata, $options);
+    }
+
 }
