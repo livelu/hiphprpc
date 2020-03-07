@@ -24,7 +24,7 @@
         "Mechanism\\":"src/hirpc/Mechanism/",
         "Login\\":"src/hirpc/Login/",
         "Courseadmin\\":"src/hirpc/Courseadmin/",
-        "Auth\\":"src/hirpc/Auth/",
+        "Auth\\":"src/hirpc/Auth/"
       }
     }
 }
