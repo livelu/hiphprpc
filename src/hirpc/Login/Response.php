@@ -25,6 +25,22 @@ class Response extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string data = 3;</code>
      */
     private $data = '';
+    /**
+     * Generated from protobuf field <code>string mechanisam = 4;</code>
+     */
+    private $mechanisam = '';
+    /**
+     * Generated from protobuf field <code>string user = 5;</code>
+     */
+    private $user = '';
+    /**
+     * Generated from protobuf field <code>string admin = 6;</code>
+     */
+    private $admin = '';
+    /**
+     * Generated from protobuf field <code>string token = 7;</code>
+     */
+    private $token = '';
 
     /**
      * Constructor.
@@ -35,6 +51,10 @@ class Response extends \Google\Protobuf\Internal\Message
      *     @type string $success
      *     @type int|string $code
      *     @type string $data
+     *     @type string $mechanisam
+     *     @type string $user
+     *     @type string $admin
+     *     @type string $token
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +124,94 @@ class Response extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->data = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string mechanisam = 4;</code>
+     * @return string
+     */
+    public function getMechanisam()
+    {
+        return $this->mechanisam;
+    }
+
+    /**
+     * Generated from protobuf field <code>string mechanisam = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setMechanisam($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->mechanisam = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string user = 5;</code>
+     * @return string
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * Generated from protobuf field <code>string user = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setUser($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->user = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string admin = 6;</code>
+     * @return string
+     */
+    public function getAdmin()
+    {
+        return $this->admin;
+    }
+
+    /**
+     * Generated from protobuf field <code>string admin = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setAdmin($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->admin = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string token = 7;</code>
+     * @return string
+     */
+    public function getToken()
+    {
+        return $this->token;
+    }
+
+    /**
+     * Generated from protobuf field <code>string token = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setToken($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->token = $var;
 
         return $this;
     }

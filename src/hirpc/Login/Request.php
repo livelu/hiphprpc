@@ -21,6 +21,14 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 scene = 2;</code>
      */
     private $scene = 0;
+    /**
+     * Generated from protobuf field <code>string phone = 3;</code>
+     */
+    private $phone = '';
+    /**
+     * Generated from protobuf field <code>string password = 4;</code>
+     */
+    private $password = '';
 
     /**
      * Constructor.
@@ -30,6 +38,8 @@ class Request extends \Google\Protobuf\Internal\Message
      *
      *     @type string $domainName
      *     @type int|string $scene
+     *     @type string $phone
+     *     @type string $password
      * }
      */
     public function __construct($data = NULL) {
@@ -77,6 +87,50 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->scene = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string phone = 3;</code>
+     * @return string
+     */
+    public function getPhone()
+    {
+        return $this->phone;
+    }
+
+    /**
+     * Generated from protobuf field <code>string phone = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPhone($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->phone = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string password = 4;</code>
+     * @return string
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * Generated from protobuf field <code>string password = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPassword($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->password = $var;
 
         return $this;
     }

@@ -1,11 +1,11 @@
 <?php
 // GENERATED CODE -- DO NOT EDIT!
 
-namespace Login;
+namespace Auth;
 
 /**
  */
-class LoginClient extends \Grpc\BaseStub {
+class AuthClient extends \Grpc\BaseStub {
 
     /**
      * @param string $hostname hostname
@@ -17,41 +17,41 @@ class LoginClient extends \Grpc\BaseStub {
     }
 
     /**
-     * @param \Login\Request $argument input argument
+     * @param \Auth\Request $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function GetLoginCode(\Login\Request $argument,
+    public function MakeAccessToken(\Auth\Request $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/login.Login/GetLoginCode',
+        return $this->_simpleRequest('/auth.Auth/MakeAccessToken',
         $argument,
-        ['\Login\Response', 'decode'],
+        ['\Auth\Response', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Login\Request $argument input argument
+     * @param \Auth\Request $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function CheckLogin(\Login\Request $argument,
+    public function DelUserAccessToken(\Auth\Request $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/login.Login/CheckLogin',
+        return $this->_simpleRequest('/auth.Auth/DelUserAccessToken',
         $argument,
-        ['\Login\Response', 'decode'],
+        ['\Auth\Response', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Login\Request $argument input argument
+     * @param \Auth\Request $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function NameLogin(\Login\Request $argument,
+    public function CheckAccessToken(\Auth\Request $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/login.Login/NameLogin',
+        return $this->_simpleRequest('/auth.Auth/CheckAccessToken',
         $argument,
-        ['\Login\Response', 'decode'],
+        ['\Auth\Response', 'decode'],
         $metadata, $options);
     }
 
